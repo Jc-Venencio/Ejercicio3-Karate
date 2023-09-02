@@ -2,7 +2,7 @@ Feature: Post and Get an user on Petstore
 
   @Create
   Scenario: Post User
-    * def createData = read('/user-request.json')
+    * def createData = read('/user-post-request.json')
     Given url "https://petstore.swagger.io/v2/user"
     And request createData
     When method post
