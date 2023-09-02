@@ -16,3 +16,4 @@ Feature: Post and Get an user on Petstore
     When method get
     Then status 200
     And match $.username == 'JCV-User'
+    * print response
